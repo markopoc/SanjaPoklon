@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Naruci se</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+
+    
+<link rel="icon" type="image/x-icon" href="/LogoFavicon.png">
+</head>
+<body class="flex flex-col min-h-screen bg-[url('Bg.png')] bg-center bg-repeat">
+  <!-- Nav bar -->
+  <div id="navbar1" class=" transition-transform duration-300 navbar fixed bg-base-100 shadow-sm h-32 z-25 top-0 bg-repeat bg-[url('Navbarbck4.png')] ">
+    <!-- pocetni navbar -->
+    <div class="navbar-start flex items-center w-full">
+      <div class="hidden sm:flex items-center gap-3 ml-2 md:gap-10 md:ml-15">
+        <a href="usluge.html" class="btn btn-info lg:text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">Usluge</a>
+        <a href="kontakt.html" class="btn btn-info lg:text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">Kontakt</a>
+        <a href="Onama.html" class="btn btn-info text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">O nama</a>
+      </div>
+    
+
+      <div class="drawer block sm:hidden mr-4 ">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle " />
+        <div class="drawer-content sm:hidden">
+          <label for="my-drawer" class="btn btn-info drawer-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+        </div>
+        <!-- područje za izać -->
+        <div class="drawer-side w-80 sm:hidden">
+          <label for="my-drawer" aria-label="sidebar" class="drawer-overlay !w-full"></label>
+          <ul class="menu bg-[url('Navbarbckv.1.png')] bg-base-300 text-base-content min-h-full !w-80 p-10 !text-4xl !font-extrabold justify-items-center">
+            <li><a href="Onama.html" class="!py-8 !px-4 ">O nama</a></li>
+            <li><a href="usluge.html" class="!py-8 !px-4">Usluge</a></li>
+            <li><a href="kontakt.html" class="!py-8 !px-4">Kontakt</a></li>
+            <li><a href="index.html" class="!py-8 !px-4">Početna</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      
+     
+
+    
+     
+
+ 
+  
+ 
+<!-- 
+centralni navbar -->
+    <div class="navbar-center flex justify-center bg-transparent">
+      <div class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 ml-15  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
+        <a class="text-lg text-2xl lg:text-5xl font-bold mr-2 " href="index.html">
+          Sanja Pocrnja dentalni labaratorij
+        </a>
+        <img src="Sanja dental logo finale.png" alt="Sanja dental lab logo" class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" />
+      </div>
+    </div>
+    <!-- kraj navbara -->
+    <div class="navbar-end">
+   
+
+    </div>
+  </div>
+    
+
+
+<!-- Kartica za ispunu -->
+    <div class="mx-auto max-w-4xl mt-12 rounded-bg grid grid-cols-1 justify-items-center gap-8 bg-transparent flex-1 	grid place-items-center">
+        <div class="card bg-base-100 w-96 shadow-sm ">
+            <div class="card-body">
+                <input id="ime" type="text" placeholder="Ime i Prezime" class="input" />
+                <label class="input validator">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g fill="none"><path d="M7.25 11.5C6.83579 11.5 6.5 11.8358 6.5 12.25C6.5 12.6642 6.83579 13 7.25 13H8.75C9.16421 13 9.5 12.6642 9.5 12.25C9.5 11.8358 9.16421 11.5 8.75 11.5H7.25Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6 1C4.61929 1 3.5 2.11929 3.5 3.5V12.5C3.5 13.8807 4.61929 15 6 15H10C11.3807 15 12.5 13.8807 12.5 12.5V3.5C12.5 2.11929 11.3807 1 10 1H6ZM10 2.5H9.5V3C9.5 3.27614 9.27614 3.5 9 3.5H7C6.72386 3.5 6.5 3.27614 6.5 3V2.5H6C5.44771 2.5 5 2.94772 5 3.5V12.5C5 13.0523 5.44772 13.5 6 13.5H10C10.5523 13.5 11 13.0523 11 12.5V3.5C11 2.94772 10.5523 2.5 10 2.5Z" fill="currentColor"></path></g></svg>
+                    <input id="telefon" type="tel" class="tabular-nums" required placeholder="Phone" pattern="[0-9]*" minlength="10" maxlength="10" title="Must be 10 digits" />
+                  </label>
+                  <p class="validator-hint hidden">Broj telefona</p>
+                  <label class="input validator">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
+                    <input id="mail" type="email" placeholder="mail@site.com" required/>
+                  </label>
+                  <div class="validator-hint hidden">Enter valid email address</div>
+    <input id="datum" type="date" class="input"/>
+    <select id="vrijeme" class="select select-bordered w-full max-w-xs">
+    <option>08:00</option>
+    <option>08:30</option>
+    <option>09:00</option>
+    <option>09:30</option>
+    <option>10:00</option>
+    <option>10:30</option>
+    <option>11:00</option>
+    <option>11:30</option>
+    <option>12:00</option>
+    <option>12:30</option>
+    <option>13:00</option>
+    <option>13:30</option>
+    <option>14:00</option>
+    <option>14:30</option>
+    <option>15:00</option>
+    <option>15:30</option>
+    <option>16:00</option>
+  </select>
+  <fieldset class="fieldset">
+  <textarea id="problem" class="textarea h-24" placeholder="Problem..."></textarea>
+  
+</fieldset>
+ <p id="Pon" class="text-error hidden">Nisu svi podatci ispunjeni!</p>
+  <button class="btn btn-primary max-w-xs" id="Prijava">Pošalji</button>
+            </div>
+           
+          </div>
+    </div>
+
+
+
+
+  <!-- footer -->
+  <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 bg-[url('footer.png')]  bg-repeat">
+    <aside>
+      <img class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" src="Sanja dental logo finale.png" alt="sanja denalni labaratorij logo">
+      <p>
+        Sanja Pocrnja dentalni labaratorij
+        <br />
+        Sa nama od 2013.
+      </p>
+    </aside>
+    <nav class="!text-black !text-bold" >
+      <h6 class="footer-title ">Usluge</h6>
+      <a href="usluge.html" class="link link-hover">Cijenik Usluga</a>
+      <h6 class="footer-title "></h6>
+      
+<h6 class="footer-title ">Radno vrijeme</h6>
+      <a href="#" class="link link-hover">pon - pet </a>
+      <a href="#" class="link link-hover">08:00 - 16:00 </a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">O nama</h6>
+      <a href="Onama.html" class="link link-hover">Zanimljivosti o nama</a>
+      <h6 class="footer-title "></h6>
+      <a href="#" class="link link-hover">OIB: 80615412826 </a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Kontakt</h6>
+      <a href="kontakt.html" class="link link-hover">Kontakt info</a>
+      <a href="tel:+385916247600" class="link link-hover">TEL: +385 91 624 7600</a>
+     
+    </nav>
+  </footer>
+  
+  <script type="module" src='naruc.js'></script>
+</body>
+</html>

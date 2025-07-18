@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Usluge</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/x-icon" href="/LogoFavicon.png">
+</head>
+
+<body class="flex flex-col min-h-screen bg-[url('Bg.png')] bg-center bg-repeat">
+    <!-- Nav bar -->
+  <div id="navbar1" class=" transition-transform duration-300 navbar fixed bg-base-100 shadow-sm h-32 z-25 top-0 bg-repeat bg-[url('Navbarbck4.png')] ">
+    <!-- pocetni navbar -->
+    <div class="navbar-start flex items-center w-full">
+      <div class="hidden sm:flex items-center gap-3 ml-2 md:gap-10 md:ml-15">
+        <a href="Onama.html" class="btn btn-info lg:text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">O nama</a>
+        <a href="kontakt.html" class="btn btn-info lg:text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">Kontakt</a>
+        <a href="index.html" class="btn btn-info text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">Početna</a>
+      </div>
+    
+
+      <div class="drawer block sm:hidden mr-4 ">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle " />
+        <div class="drawer-content sm:hidden">
+          <label for="my-drawer" class="btn btn-info drawer-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+        </div>
+        <!-- područje za izać -->
+        <div class="drawer-side w-80 sm:hidden">
+          <label for="my-drawer" aria-label="sidebar" class="drawer-overlay !w-full"></label>
+          <ul class="menu bg-[url('Navbarbckv.1.png')] bg-base-300 text-base-content min-h-full !w-80 p-10 !text-4xl !font-extrabold justify-items-center">
+            <li><a href="index.html" class="!py-8 !px-4 ">Početna</a></li>
+            <li><a href="Onama.html" class="!py-8 !px-4">O nama</a></li>
+            <li><a href="kontakt.html" class="!py-8 !px-4">Kontakt</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      
+     
+
+    
+     
+
+ 
+  
+ 
+<!-- 
+centralni navbar -->
+    <div class="navbar-center flex justify-center bg-transparent">
+      <div class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 ml-15  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
+        <a class="text-lg text-2xl lg:text-5xl font-bold mr-2 " href="index.html">
+          Sanja Pocrnja dentalni labaratorij
+        </a>
+        <img src="Sanja dental logo finale.png" alt="Sanja dental lab logo" class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" />
+      </div>
+    </div>
+    <!-- kraj navbara -->
+    <div class="navbar-end">
+   
+
+    </div>
+  </div>
+
+ <div
+  class="mx-auto max-w-6xl mt-20 lg:mb-20 rounded-bg grid grid-cols-1 lg:grid-cols-2 justify-items-center md:gap-80 bg-transparent flex-1 items-start">
+  <div class="card bg-base-100 w-full w-96 lg:w-200 shadow-sm mt-25">
+    <figure>
+      <img src="" alt="">
+    </figure>
+    <div class="card-body">
+      <h1 class="card-title !text-7xl !text-extrabold justify-center">Cijenik usluga</h1>
+      <br><br>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Metal keramička kruna</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">60€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Zirkon keramička kruna slojevana keramika</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">120€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Zirkon potpuna kruna</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">100€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Bez metalna keramička kruna pres slojevana</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">110€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Keramički most COCr na implantatu</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">130€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Kompozitna krunica</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">60€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Privremena krunica</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">25€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Puna metalna kruna</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">40€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Ljuskica</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">70€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Ljuskica na vatrostalnom bataljku</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">130€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Nadogradnja čelik</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">25€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Metalna proteza baza</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">130€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Metalna proteza titan baza</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">300€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Akrilatna proteza</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">160€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Wironit ploča sa zubima</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">230€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Djelomična akrilatna proteza</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">140€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Reperatura proteze (lom) - 2 elementa</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">25€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Reperatura proteze svaki dodatni element</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">10€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Zglobne veze</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">60€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Rhein 83 jednostrano sedlo</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">100€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Frezani utor</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">15€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Teleskop kruna</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">130€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Podlaganje proteze</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">45€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Privremena proteza</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">75€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Udlaga za izbjeljivanje</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">35€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Retaineri</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">25€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Udlaga u zagrizu</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">80€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Lotanje</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">25€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Žabica</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">40€</span>
+      </p>
+      <p class="border-4 border-info rounded-lg p-4 flex justify-between items-center">
+        <span class="text-2xl lg:text-3xl font-black">Erkodent silesnor</span>
+        <span class="text-right text-2xl font-extrabold text-info ml-4">100€</span>
+      </p>
+    </div>
+  </div>
+  
+<div class="grid grid-cols-1  gap-8 md:mt-20">
+  <!-- Kartica 1: Metal-keramička krunica -->
+  <div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+    <figure>
+      <img src="slikeZuba/1e7bf8d4-b979-472b-bd65-5302e40ae5ff.jpeg" alt="Metal-keramička krunica" class="h-48 object-cover  w-full" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Metal-keramička krunica</h2>
+      <p>Izrada trajnih i estetski prihvatljivih metal-keramičkih krunica za obnovu funkcije i izgleda zuba.</p>
+    </div>
+  </div>
+
+  <!-- Kartica 2: Cirkonska krunica -->
+  <div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+    <figure>
+      <img src="slikeZuba/4fa4c32a-7449-44e5-bcd0-7178451980da.jpeg" alt="Cirkonska krunica" class="h-48 object-cover w-full" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Cirkonska krunica</h2>
+      <p>Visokoestetska i biokompatibilna rješenja s cirkonskim krunicama, idealna za prednje i stražnje zube.</p>
+    </div>
+  </div>
+
+  <!-- Kartica 3: Totalna proteza -->
+  <div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+    <figure>
+      <img src="slikeZuba/2cdf00d1-4174-4966-b234-a6c657848090.jpeg" alt="Totalna proteza" class="h-48 object-cover w-full" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Totalna proteza</h2>
+      <p>Izrada totalnih akrilatnih proteza za potpunu nadoknadu izgubljenih zuba i vraćanje osmijeha.</p>
+    </div>
+  </div>
+
+  <!-- Kartica 4: Ljuskice (Veneers) -->
+  <div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+    <figure>
+      <img src="slikeZuba/ljuskice.JPG" alt="Ljuskice" class="h-48 object-cover w-full" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Ljuskice (Veneers)</h2>
+      <p>Keramičke ljuskice za estetsku korekciju prednjih zuba, minimalno invazivno i dugotrajno rješenje.</p>
+    </div>
+  </div>
+
+  <!-- Kartica 5: Privremene krunice -->
+  <div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+    <figure>
+      <img src="slikeZuba/privremeneKr.jpg" alt="Privremene krunice" class="h-48 object-cover w-full" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Privremene krunice</h2>
+      <p>Brza izrada privremenih krunica za zaštitu zuba i estetiku tijekom trajanja terapije.</p>
+    </div>
+  </div>
+
+  <!-- Kartica 6: Udlage za izbjeljivanje -->
+  <div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+    <figure>
+      <img src="slikeZuba/retainer.jpg" alt="Udlage za izbjeljivanje" class="h-48 object-cover w-full" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Udlage za izbjeljivanje</h2>
+      <p>Izrada individualnih udlaga za sigurno i učinkovito profesionalno izbjeljivanje zuba kod kuće.</p>
+    </div>
+  </div>
+ <!-- Kartica 7: Ortodontski retaineri -->
+<div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+  <figure>
+    <img src="slikeZuba/ortodonskiRetainer.JPG" alt="Ortodontski retaineri" class="h-48 object-cover w-full" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title text-2xl font-bold">Ortodontski retaineri</h2>
+    <p>Izrada fiksnih i mobilnih retainera za održavanje pravilnog položaja zuba nakon ortodontske terapije.</p>
+  </div>
+</div>
+
+<!-- Kartica 8: Nadogradnje na implantatima -->
+<div class="card bg-base-100 w-full sm:w-96 md:w-130 shadow-sm mt-8">
+  <figure>
+    <img src="slikeZuba/impla.jpg" alt="Nadogradnje na implantatima" class="h-48 object-cover w-full" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title text-2xl font-bold">Nadogradnje na implantatima</h2>
+    <p>Precizna izrada suprastruktura i krunica na dentalnim implantatima za optimalnu funkciju i estetiku.</p>
+  </div>
+</div>
+
+</div>
+
+
+</div>
+
+  <!-- footer -->
+  <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 bg-[url('footer.png')]  bg-repeat">
+    <aside>
+      <img class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" src="Sanja dental logo finale.png" alt="sanja denalni labaratorij logo">
+      <p>
+        Sanja Pocrnja dentalni labaratorij
+        <br />
+        Sa nama od 2013.
+      </p>
+    </aside>
+    <nav class="!text-black !text-bold" >
+      <h6 class="footer-title ">Usluge</h6>
+      <a href="usluge.html" class="link link-hover">Cijenik Usluga</a>
+      <h6 class="footer-title "></h6>
+      
+<h6 class="footer-title ">Radno vrijeme</h6>
+      <a href="#" class="link link-hover">pon - pet </a>
+      <a href="#" class="link link-hover">08:00 - 16:00 </a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">O nama</h6>
+      <a href="Onama.html" class="link link-hover">Zanimljivosti o nama</a>
+      <h6 class="footer-title "></h6>
+      <a href="#" class="link link-hover">OIB: 80615412826 </a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Kontakt</h6>
+      <a href="kontakt.html" class="link link-hover">Kontakt info</a>
+      <a href="tel:+385916247600" class="link link-hover">TEL: +385 91 624 7600</a>
+     
+    </nav>
+  </footer>
+
+  <script src='main.js'></script>
+</body>
+
+</html>

@@ -31,15 +31,15 @@
   <!-- Nav bar -->
   <div id="navbar1" class=" transition-transform duration-300 navbar fixed bg-base-100 shadow-sm h-32 z-25 top-0 bg-repeat bg-[url('navbarbck4.png')] ">
     <!-- pocetni navbar -->
-    <div class="navbar-start flex items-center w-full">
-      <div class="hidden sm:flex items-center gap-3 ml-2 md:gap-10 md:ml-15">
-        <a href="usluge.html" class="btn btn-info lg:text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">Usluge</a>
-        <a href="kontakt.html" class="btn btn-info lg:text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">Kontakt</a>
-        <a href="Onama.html" class="btn btn-info text-xl !font-bold !w-25 font-semibold hover:text-blue-600 transition">O nama</a>
+    <div class="navbar-start flex items-center ">
+      <div class="hidden sm:flex items-center gap-3 ml-2 md:gap-5 md:ml-5">
+        <a href="usluge.html" class="btn btn-info lg:text-xl !font-bold md:w-25 lg:w-30  font-semibold hover:text-blue-600 transition">Usluge</a>
+        <a href="kontakt.html" class="btn btn-info lg:text-xl !font-bold  md:w-25 lg:w-30 font-semibold hover:text-blue-600 transition">Kontakt</a>
+        <a href="Onama.html" class="btn btn-info lg:text-xl !font-bold md:w-25 lg:w-30 font-semibold hover:text-blue-600 transition">O nama</a>
       </div>
     
 
-      <div class="drawer block sm:hidden mr-4 ">
+      <div class="drawer block sm:hidden">
         <input id="my-drawer" type="checkbox" class="drawer-toggle " />
         <div class="drawer-content sm:hidden">
           <label for="my-drawer" class="btn btn-info drawer-button">
@@ -49,8 +49,8 @@
           </label>
         </div>
         <!-- područje za izać -->
-        <div class="drawer-side w-80 sm:hidden">
-          <label for="my-drawer" aria-label="sidebar" class="drawer-overlay !w-full"></label>
+        <div class="drawer-side  sm:hidden">
+          <label for="my-drawer" aria-label="sidebar" class="drawer-overlay"></label>
           <ul class="menu bg-[url('Navbarbckv.1.png')] bg-base-300 text-base-content min-h-full !w-80 p-10 !text-4xl !font-extrabold justify-items-center">
             <li><a href="Onama.html" class="!py-8 !px-4 ">O nama</a></li>
             <li><a href="usluge.html" class="!py-8 !px-4">Usluge</a></li>
@@ -74,9 +74,9 @@
  
 <!-- 
 centralni navbar -->
-    <div class="navbar-center flex justify-center bg-transparent">
-      <div class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 ml-15  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
-        <a class="text-sm lg:text-2xl font-bold mr-2 " href="index.html">
+    <div class="navbar-center flex sm:justify-center bg-transparent font-bold">
+      <div class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 font-bold  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
+        <a class=" text-xl md:text-2xl font-[1000] mr-2 " href="index.html">
           Sanja Pocrnja dentalni labaratorij
         </a>
         <img src="Sanja dental logo finale.png" alt="Sanja dental lab logo" class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" />
@@ -99,7 +99,7 @@ centralni navbar -->
     <a href="Onama.html">
       <img src="Sanja.jpg" alt="O nama" />
     </a>
-    <div class="card-body flex justify-end bg-white">
+    <div class="card-body flex w-96 lg:w-200 justify-end bg-white">
       <h1 class="card-title">O nama</h1>
       <p>Saznaj nešto više o Sanja Dental labaratoriju.</p>
       <div class="card-actions justify-end ">
@@ -110,7 +110,7 @@ centralni navbar -->
   
 
 <!-- karousel -->
-<div id="carousel" class="carousel max-w-sm h-100 md:h-175 mx-auto md:max-w-4xl w-200 mx-auto mt-10 rounded-box shadow overflow-x-auto scroll-smooth whitespace-nowrap">
+<div id="carousel" class="carousel max-w-sm h-96 lg:h-200 mx-auto my-auto lg:max-w-4xl w-200 mx-auto mt-10 rounded-box shadow overflow-x-auto scroll-smooth whitespace-nowrap">
   <div class="carousel-item w-full inline-block">
     <img src="slikeZuba/8d551035-da7f-4324-9355-513d5d2149d3.jpeg" class="w-full" />
   </div>
@@ -131,7 +131,7 @@ centralni navbar -->
     <a href="usluge.html">
       <img src="usluge placeholder.jpg" alt="O nama" />
     </a>
-    <div class="card-body flex justify-end bg-white">
+    <div class="card-body flex justify-end bg-white w-96 lg:w-200">
       <h1 class="card-title">Usluge i cjenik</h1>
       <p>Saznaj nešto više o uslugama i cijenama Sanja Dental labaratorija.</p>
       <div class="card-actions justify-end ">

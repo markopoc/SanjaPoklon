@@ -15,20 +15,20 @@
 </head>
 
 <body class="flex flex-col min-h-screen bg-[url('Bg.png')] bg-center bg-repeat">
-   <!-- Nav bar -->
+  <!-- Nav bar -->
   <div id="navbar1" class=" transition-transform duration-300 navbar fixed bg-base-100 shadow-sm h-32 z-25 top-0 bg-repeat bg-[url('navbarbck4.png')] ">
     <!-- pocetni navbar -->
     <div class="navbar-start flex items-center ">
-      <div class="hidden sm:flex items-center gap-3 ml-2 md:gap-5 md:ml-5">
-        <a href="usluge.html" class="btn btn-info lg:text-xl !font-bold md:w-25 lg:w-30  font-semibold hover:text-blue-600 transition">Usluge</a>
-        <a href="kontakt.html" class="btn btn-info lg:text-xl !font-bold  md:w-25 lg:w-30 font-semibold hover:text-blue-600 transition">Kontakt</a>
-        <a href="Onama.html" class="btn btn-info lg:text-xl !font-bold md:w-25 lg:w-30 font-semibold hover:text-blue-600 transition">O nama</a>
+      <div class="hidden lg:flex items-center gap-2 lg:gap-5">
+        <a href="usluge.html" class="btn btn-info lg:text-xl !font-bold md:w-20 lg:w-30  font-semibold hover:text-blue-600 transition">Usluge</a>
+        <a href="kontakt.html" class="btn btn-info lg:text-xl !font-bold  md:w-20 lg:w-30 font-semibold hover:text-blue-600 transition">Kontakt</a>
+        <a href="Onama.html" class="btn btn-info lg:text-xl !font-bold md:w-20 lg:w-30 font-semibold hover:text-blue-600 transition">O nama</a>
       </div>
     
 
-      <div class="drawer block sm:hidden">
+      <div class="drawer block lg:hidden">
         <input id="my-drawer" type="checkbox" class="drawer-toggle " />
-        <div class="drawer-content sm:hidden">
+        <div class="drawer-content lg:hidden">
           <label for="my-drawer" class="btn btn-info drawer-button">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -36,7 +36,7 @@
           </label>
         </div>
         <!-- područje za izać -->
-        <div class="drawer-side  sm:hidden">
+        <div class="drawer-side  lg:hidden">
           <label for="my-drawer" aria-label="sidebar" class="drawer-overlay"></label>
           <ul class="menu bg-[url('Navbarbckv.1.png')] bg-base-300 text-base-content min-h-full !w-80 p-10 !text-4xl !font-extrabold justify-items-center">
             <li><a href="Onama.html" class="!py-8 !px-4 ">O nama</a></li>
@@ -63,8 +63,9 @@
 centralni navbar -->
     <div class="navbar-center flex sm:justify-center bg-transparent font-bold">
       <div class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 font-bold  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
-        <a class=" text-xl md:text-2xl font-[1000] mr-2 " href="index.html">
-          Sanja Pocrnja dentalni labaratorij
+        <a class="text-xl  md:text-2xl font-[1000] lg:mr-2 ml-4 md:ml-0" href="index.html">
+          Sanja Pocrnja <br class="sm:hidden">
+          dentalni labaratorij
         </a>
         <img src="Sanja dental logo finale.png" alt="Sanja dental lab logo" class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" />
       </div>

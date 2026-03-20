@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="/LogoFavicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
 {
@@ -28,24 +28,30 @@
 
 <body class="flex flex-col min-h-screen bg-[url('Bg.png')] bg-center bg-repeat">
 
-  
+
 
   <!-- Nav bar -->
-  <div id="navbar1" class=" transition-transform duration-300 navbar fixed bg-base-100 shadow-sm h-32 z-25 top-0 bg-repeat bg-[url('navbarbck4.png')] ">
+  <div id="navbar1"
+    class=" transition-transform duration-300 navbar fixed bg-base-100 shadow-sm h-32 z-25 top-0 bg-repeat bg-[url('navbarbck4.png')] ">
     <!-- pocetni navbar -->
     <div class="navbar-start flex items-center ">
       <div class="hidden lg:flex items-center gap-2 lg:gap-5">
-        <a href="usluge.html" class="btn btn-info lg:text-xl !font-bold md:w-20 lg:w-30  font-semibold hover:text-blue-600 transition">Usluge</a>
-        <a href="kontakt.html" class="btn btn-info lg:text-xl !font-bold  md:w-20 lg:w-30 font-semibold hover:text-blue-600 transition">Kontakt</a>
-        <a href="Onama.html" class="btn btn-info lg:text-xl !font-bold md:w-20 lg:w-30 font-semibold hover:text-blue-600 transition">O nama</a>
+        <a href="usluge.html"
+          class="btn btn-info lg:text-xl !font-bold md:w-20 lg:w-30  font-semibold hover:text-blue-600 transition">Usluge</a>
+        <a href="kontakt.html"
+          class="btn btn-info lg:text-xl !font-bold  md:w-20 lg:w-30 font-semibold hover:text-blue-600 transition">Kontakt</a>
+        <a href="Onama.html"
+          class="btn btn-info lg:text-xl !font-bold md:w-20 lg:w-30 font-semibold hover:text-blue-600 transition">O
+          nama</a>
       </div>
-    
+
 
       <div class="drawer block lg:hidden">
         <input id="my-drawer" type="checkbox" class="drawer-toggle " />
         <div class="drawer-content lg:hidden">
           <label for="my-drawer" class="btn btn-info drawer-button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </label>
@@ -53,65 +59,86 @@
         <!-- područje za izać -->
         <div class="drawer-side  lg:hidden">
           <label for="my-drawer" aria-label="sidebar" class="drawer-overlay"></label>
-          <ul class="menu bg-[url('Navbarbckv.1.png')] bg-base-300 text-base-content min-h-full !w-80 p-10 !text-4xl !font-extrabold justify-items-center">
+          <ul
+            class="menu bg-[url('Navbarbckv.1.png')] bg-base-300 text-base-content min-h-full !w-80 p-10 !text-4xl !font-extrabold justify-items-center">
             <li><a href="Onama.html" class="!py-8 !px-4 ">O nama</a></li>
             <li><a href="usluge.html" class="!py-8 !px-4">Usluge</a></li>
             <li><a href="kontakt.html" class="!py-8 !px-4">Kontakt</a></li>
-            
+
           </ul>
         </div>
       </div>
     </div>
-    
-    
-    
-      
-     
 
-    
-     
 
- 
-  
- 
-<!-- 
+
+
+
+
+
+
+
+
+
+
+    <!-- 
 centralni navbar -->
     <div class="navbar-center flex sm:justify-center bg-transparent font-bold">
-      <div class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 font-bold  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
+      <div
+        class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 font-bold  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
         <a class="text-xl  md:text-2xl font-[1000] lg:mr-2 ml-4 md:ml-0" href="index.html">
           Sanja Pocrnja <br class="sm:hidden">
           dentalni laboratorij
         </a>
-        <img src="Sanja dental logo finale.png" alt="Sanja dental lab logo" class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" />
+        <img src="Sanja dental logo finale.png" alt="Sanja dental lab logo"
+          class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" />
       </div>
     </div>
     <!-- kraj navbara -->
     <div class="navbar-end">
-   
+
 
     </div>
   </div>
 
 
-   <!-- Naslovnica -->
-    <div class="mask-b-from-70% mask-b-to-90%">
-<div class="hero min-h-screen bg-gray-700/50 bg-base-transparent">
-  <div class="hero-content text-center">
-    <div class=" ">
-      <img src="SanjaHero2.png" alt="">
-      <p class="py-6 text-xl sm:text-3xl text-gray-100">
-        Preciznost koja vraća osmijeh.
-      </p>
-      <a href="kontakt.html" class="btn btn-info !font-bold">Kontakt</a>
+  <!-- Naslovnica -->
+  <div class="mask-b-from-70% mask-b-to-90%">
+    <div class="hero min-h-screen bg-gray-700/50 bg-base-transparent">
+      <div class="hero-content text-center">
+        <div class=" ">
+          <img src="SanjaHero2.png" alt="">
+          <p class="py-6 text-xl sm:text-3xl text-gray-100">
+            Preciznost koja vraća osmijeh.
+          </p>
+          <a href="kontakt.html" class="btn btn-info !font-bold">Kontakt</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 
 
   <!-- O nama i dental lab -->
-  <div
-    class="card bg-base-300 shadow-sm mx-auto rounded-bg grid mt-40 w-96 lg:w-200 justify-items-center">
+
+  <div class="hero bg-transparent min-h-screen">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img src="Sanja.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+      
+      <div class="">
+        <h1 class="text-5xl font-bold py-6 ml-3">O nama</h1>
+        <p class="py-6 ml-5">
+
+          Sanja Dentalni Laboratorij pruža precizna i kvalitetna dentalna rješenja uz suvremenu tehnologiju i stručnost.
+          Posvećeni smo izradi vrhunskih protetskih radova koji osiguravaju funkcionalnost i prirodan izgled — saznaj
+          više.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- <div class="card bg-base-300 shadow-sm mx-auto rounded-bg grid mt-40 w-96 lg:w-200 justify-items-center">
     <a href="Onama.html">
       <img src="Sanja.jpg" alt="O nama" />
     </a>
@@ -122,28 +149,28 @@ centralni navbar -->
         <a href="Onama.html" class="btn btn-info !font-bold ">Vidi još</a>
       </div>
     </div>
-  </div>
-  
+  </div> -->
 
-<!-- karousel -->
-<div id="carousel" class="carousel max-w-sm h-96 lg:h-200 mx-auto my-auto lg:max-w-4xl w-200 mx-auto mt-10 rounded-box shadow overflow-x-auto scroll-smooth whitespace-nowrap">
-  <div class="carousel-item w-full inline-block">
-    <img src="slikeZuba/8d551035-da7f-4324-9355-513d5d2149d3.jpeg" class="w-full" />
-  </div>
-  <div class="carousel-item w-full inline-block">
-    <img src="slikeZuba/e3b320a2-fbd3-48a6-b4e1-6a510c510b3e.jpeg" class="w-full" />
-  </div>
-  <div class="carousel-item w-full inline-block">
-    <img src="slikeZuba/ae6fd8b1-39fd-45ae-bbe4-494dbeb0a59b.jpeg" class="w-full" />
-  </div>
-  <div class="carousel-item w-full inline-block">
-    <img src="slikeZuba/f890b49e-a992-460c-b472-1b8e7dd714f7.jpeg" class="w-full" />
-  </div>
-</div>
-<!--usluge -->
 
-  <div
-    class="card bg-base-300 shadow-sm mx-auto rounded-bg grid mt-40 w-96 lg:w-200  justify-items-center">
+  <!-- karousel -->
+  <div id="carousel"
+    class="carousel max-w-sm h-96 lg:h-200 mx-auto my-auto lg:max-w-4xl w-200 mx-auto mt-10 rounded-box shadow overflow-x-auto scroll-smooth whitespace-nowrap">
+    <div class="carousel-item w-full inline-block">
+      <img src="slikeZuba/8d551035-da7f-4324-9355-513d5d2149d3.jpeg" class="w-full" />
+    </div>
+    <div class="carousel-item w-full inline-block">
+      <img src="slikeZuba/e3b320a2-fbd3-48a6-b4e1-6a510c510b3e.jpeg" class="w-full" />
+    </div>
+    <div class="carousel-item w-full inline-block">
+      <img src="slikeZuba/ae6fd8b1-39fd-45ae-bbe4-494dbeb0a59b.jpeg" class="w-full" />
+    </div>
+    <div class="carousel-item w-full inline-block">
+      <img src="slikeZuba/f890b49e-a992-460c-b472-1b8e7dd714f7.jpeg" class="w-full" />
+    </div>
+  </div>
+  <!--usluge -->
+
+  <div class="card bg-base-300 shadow-sm mx-auto rounded-bg grid mt-40 w-96 lg:w-200  justify-items-center">
     <a href="usluge.html">
       <img src="usluge placeholder.jpg" alt="O nama" />
     </a>
@@ -158,95 +185,105 @@ centralni navbar -->
 
 
   <!-- Kartice za pregled -->
-  <div
-    class="mx-auto mt-20 rounded-bg grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-8 bg-transparent ">
-      <!-- Metal-keramička krunica -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm">
-    <figure>
-      <img src="slikeZuba/e28cc70f-e707-419a-a50a-4ce5ff0d26a0.jpeg" alt="Metal-keramička krunica" class="h-48 object-cover w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Metal-keramička krunica</h2>
-      <p>Kombinira metalnu bazu i keramiku za čvrstoću i prirodan izgled. Standard u dentalnoj protetici, posebno za stražnje zube.</p>
+  <div class="mx-auto mt-20 rounded-bg grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-8 bg-transparent ">
+    <!-- Metal-keramička krunica -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm">
+      <figure>
+        <img src="slikeZuba/e28cc70f-e707-419a-a50a-4ce5ff0d26a0.jpeg" alt="Metal-keramička krunica"
+          class="h-48 object-cover w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Metal-keramička krunica</h2>
+        <p>Kombinira metalnu bazu i keramiku za čvrstoću i prirodan izgled. Standard u dentalnoj protetici, posebno za
+          stražnje zube.</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Cirkonska krunica -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm">
-    <figure>
-      <img src="slikeZuba/a5ef9918-8c73-4006-9b2c-4b04afad5441.jpeg" alt="Cirkonska krunica" class="h-48 object-cover w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Cirkonska krunica</h2>
-      <p>Visokoestetska, izuzetno čvrsta i biokompatibilna krunica, idealna za prednje i stražnje zube. Ne sadrži metal.</p>
+    <!-- Cirkonska krunica -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm">
+      <figure>
+        <img src="slikeZuba/a5ef9918-8c73-4006-9b2c-4b04afad5441.jpeg" alt="Cirkonska krunica"
+          class="h-48 object-cover w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Cirkonska krunica</h2>
+        <p>Visokoestetska, izuzetno čvrsta i biokompatibilna krunica, idealna za prednje i stražnje zube. Ne sadrži
+          metal.</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Potpuna keramička krunica -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm">
-    <figure>
-      <img src="slikeZuba/26c3df44-17e2-498a-84c4-ef1ac9275f38.jpeg" alt="Potpuna keramička krunica" class="h-48 object-cover  w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Potpuna keramička krunica</h2>
-      <p>Najbolja estetika – potpuno bez metala, prozirnost i boja kao prirodan zub. Preporučuje se za prednje zube.</p>
+    <!-- Potpuna keramička krunica -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm">
+      <figure>
+        <img src="slikeZuba/26c3df44-17e2-498a-84c4-ef1ac9275f38.jpeg" alt="Potpuna keramička krunica"
+          class="h-48 object-cover  w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Potpuna keramička krunica</h2>
+        <p>Najbolja estetika – potpuno bez metala, prozirnost i boja kao prirodan zub. Preporučuje se za prednje zube.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- Zubni most -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm">
-    <figure>
-      <img src="slikeZuba/1a20cfec-969a-49c9-b9c5-b6cf61a36836.jpeg" alt="Zubni most" class="h-48 object-cover w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Zubni most</h2>
-      <p>Fiksni nadomjestak koji povezuje praznine između zuba. Vraća funkciju i estetiku kod gubitka jednog ili više zuba.</p>
+    <!-- Zubni most -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm">
+      <figure>
+        <img src="slikeZuba/1a20cfec-969a-49c9-b9c5-b6cf61a36836.jpeg" alt="Zubni most"
+          class="h-48 object-cover w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Zubni most</h2>
+        <p>Fiksni nadomjestak koji povezuje praznine između zuba. Vraća funkciju i estetiku kod gubitka jednog ili više
+          zuba.</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Ljuskice (veneers) -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm">
-    <figure>
-      <img src="slikeZuba/ljuskice.JPG" alt="Ljuskice" class="h-48 object-cover w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Ljuskice (veneers)</h2>
-      <p>Tanki keramički nadomjesci za prednju površinu zuba. Estetski ispravljaju oblik, boju i položaj zuba.</p>
+    <!-- Ljuskice (veneers) -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm">
+      <figure>
+        <img src="slikeZuba/ljuskice.JPG" alt="Ljuskice" class="h-48 object-cover w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Ljuskice (veneers)</h2>
+        <p>Tanki keramički nadomjesci za prednju površinu zuba. Estetski ispravljaju oblik, boju i položaj zuba.</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Totalna proteza -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm">
-    <figure>
-      <img src="slikeZuba/f05eb3fb-8e8b-4738-9e3e-4720ba2ca2e3.jpeg" alt="Totalna proteza" class="h-48 object-cover w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Totalna proteza</h2>
-      <p>Mobilni nadomjestak za potpunu bezubost. Omogućuje žvakanje i vraća osmijeh osobama bez zuba.</p>
+    <!-- Totalna proteza -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm">
+      <figure>
+        <img src="slikeZuba/f05eb3fb-8e8b-4738-9e3e-4720ba2ca2e3.jpeg" alt="Totalna proteza"
+          class="h-48 object-cover w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Totalna proteza</h2>
+        <p>Mobilni nadomjestak za potpunu bezubost. Omogućuje žvakanje i vraća osmijeh osobama bez zuba.</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Djelomična proteza -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm mb-10">
-    <figure>
-      <img src="slikeZuba/24ac444f-2ac6-49e2-9709-3ccf0ef70364.jpeg" alt="Djelomična proteza" class="h-48 object-cover w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Djelomična proteza</h2>
-      <p>Mobilni protetski rad za djelomičnu bezubost. Oslanja se na preostale zube i sluznicu.</p>
+    <!-- Djelomična proteza -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm mb-10">
+      <figure>
+        <img src="slikeZuba/24ac444f-2ac6-49e2-9709-3ccf0ef70364.jpeg" alt="Djelomična proteza"
+          class="h-48 object-cover w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Djelomična proteza</h2>
+        <p>Mobilni protetski rad za djelomičnu bezubost. Oslanja se na preostale zube i sluznicu.</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Protetika na implantatima -->
-  <div class="card bg-base-100 w-full max-w-md shadow-sm mb-10">
-    <figure>
-      <img src="slikeZuba/implant1.jpeg" alt="Protetika na implantatima" class="h-48 object-cover w-full" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title text-2xl font-bold">Protetika na implantatima</h2>
-      <p>Krunice, mostovi ili proteze učvršćene na implantatima. Vrhunska funkcija i estetika za trajno rješenje bezubosti.</p>
+    <!-- Protetika na implantatima -->
+    <div class="card bg-base-100 w-full max-w-md shadow-sm mb-10">
+      <figure>
+        <img src="slikeZuba/implant1.jpeg" alt="Protetika na implantatima" class="h-48 object-cover w-full" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl font-bold">Protetika na implantatima</h2>
+        <p>Krunice, mostovi ili proteze učvršćene na implantatima. Vrhunska funkcija i estetika za trajno rješenje
+          bezubosti.</p>
+      </div>
     </div>
-  </div>
 
   </div>
 
@@ -255,19 +292,20 @@ centralni navbar -->
   <!-- footer -->
   <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 bg-[url('Footer.png')]  bg-repeat">
     <aside>
-      <img class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" src="Sanja dental logo finale.png" alt="sanja denalni laboratorij logo">
+      <img class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" src="Sanja dental logo finale.png"
+        alt="sanja denalni laboratorij logo">
       <p>
         Sanja Pocrnja dentalni laboratorij
         <br />
         Sa nama od 2013.
       </p>
     </aside>
-    <nav class="!text-black !text-bold" >
+    <nav class="!text-black !text-bold">
       <h6 class="footer-title ">Usluge</h6>
       <a href="usluge.html" class="link link-hover">Cjenik Usluga</a>
       <h6 class="footer-title "></h6>
-      
-<h6 class="footer-title ">Radno vrijeme</h6>
+
+      <h6 class="footer-title ">Radno vrijeme</h6>
       <a href="#" class="link link-hover">pon - pet </a>
       <a href="#" class="link link-hover">08:00 - 16:00 </a>
     </nav>
@@ -281,7 +319,7 @@ centralni navbar -->
       <h6 class="footer-title">Kontakt</h6>
       <a href="kontakt.html" class="link link-hover">Kontakt info</a>
       <a href="tel:+385916247600" class="link link-hover">TEL: +385 91 624 7600</a>
-     
+
     </nav>
   </footer>
 
@@ -293,5 +331,3 @@ centralni navbar -->
 </body>
 
 </html>
-
-

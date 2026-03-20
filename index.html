@@ -27,7 +27,11 @@
 </head>
 
 <body class="flex flex-col min-h-screen bg-[url('Bg.png')] bg-center bg-repeat">
-
+  <script>
+    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+      history.replaceState({}, "", "/");
+    }
+  </script>
 
 
   <!-- Nav bar -->
@@ -103,7 +107,7 @@ centralni navbar -->
 
 
   <!-- Naslovnica -->
-  <div class="mask-b-from-70% mask-b-to-90%">
+  <div class="mask-b-from-70% mask-b-to-90% md:mask-b-from-90% md:mask-b-to-100% lg:mask-b-from-70% lg:mask-b-to-90%">
     <div class="hero min-h-screen bg-gray-700/50 bg-base-transparent">
       <div class="hero-content text-center">
         <div class=" ">
@@ -111,30 +115,221 @@ centralni navbar -->
           <p class="py-6 text-xl sm:text-3xl text-gray-100">
             Preciznost koja vraća osmijeh.
           </p>
-          <a href="kontakt.html" class="btn btn-info !font-bold">Kontakt</a>
+          <!-- <a href="kontakt.html" class="btn btn-info !font-bold">Kontakt</a> -->
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Kartica -->
+  <div class="mx-20 mt-20 justify-between  end-safe grid  grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-4 gap-8 ">
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/e28cc70f-e707-419a-a50a-4ce5ff0d26a0.jpeg)] bg-cover bg-center ">
 
-  <!-- O nama i dental lab -->
-
-  <div class="hero bg-transparent min-h-screen">
-    <div class="hero-content flex-col lg:flex-row-reverse">
-      <img src="Sanja.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-      
-      <div class="">
-        <h1 class="text-5xl font-bold py-6 ml-3">O nama</h1>
-        <p class="py-6 ml-5">
-
-          Sanja Dentalni Laboratorij pruža precizna i kvalitetna dentalna rješenja uz suvremenu tehnologiju i stručnost.
-          Posvećeni smo izradi vrhunskih protetskih radova koji osiguravaju funkcionalnost i prirodan izgled — saznaj
-          više.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
+          <p class="text-xl text-shadow-lg/50 py-30">Metal-keramička krunica</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex rotate-y-180 flex-col  bg-base-100 px-2 py-5 md:py-7 text-black backface-hidden">
+          <h2 class="text-xl">Metal-keramička krunica</h2>
+          <p>Kombinira metalnu bazu i keramiku za čvrstoću i prirodan izgled. Standard u dentalnoj protetici, posebno za
+            stražnje zube.</p>
+        </section>
       </div>
-      
+    </article>
+
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/a5ef9918-8c73-4006-9b2c-4b04afad5441.jpeg)] bg-cover bg-center ">
+
+          <p class="text-xl text-shadow-lg/50 py-30">Cirkonska krunica</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex rotate-y-180 flex-col  bg-base-100 px-2 py-5 md:py-10 text-black backface-hidden">
+          <h2 class="text-xl">Cirkonska krunica</h2>
+          <p>Visokoestetska, izuzetno čvrsta i biokompatibilna krunica, idealna za prednje i stražnje zube. Ne sadrži
+            metal.</p>
+        </section>
+      </div>
+    </article>
+
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/26c3df44-17e2-498a-84c4-ef1ac9275f38.jpeg)] bg-cover bg-center ">
+
+          <p class="text-xl text-shadow-lg/50 py-27">Potpuna keramička krunica</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex rotate-y-180 flex-col  bg-base-100 px-2 py-5 md:py-6 text-black backface-hidden">
+          <h2 class="text-xl">Potpuna keramička krunica</h2>
+          <p>Najbolja estetika – potpuno bez metala, prozirnost i boja kao prirodan zub. Preporučuje se za prednje zube.
+          </p>
+        </section>
+      </div>
+    </article>
+
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/1a20cfec-969a-49c9-b9c5-b6cf61a36836.jpeg)] bg-cover bg-center ">
+
+          <p class="text-xl text-shadow-lg/50 py-30">Zubni most</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex rotate-y-180 flex-col  bg-base-100 px-2 py-5 md:py-10 text-black backface-hidden">
+          <h2 class="text-xl">Zubni most</h2>
+          <p>Fiksni nadomjestak koji povezuje praznine između zuba. Vraća funkciju i estetiku kod gubitka jednog ili
+            više
+            zuba.</p>
+        </section>
+      </div>
+    </article>
+
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/ljuskice.JPG)] bg-cover bg-center ">
+
+          <p class="text-xl text-shadow-lg/50 py-30">Ljuskice (veneers)</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex rotate-y-180 flex-col  bg-base-100 px-2 py-5 md:py-10 text-black backface-hidden">
+          <h2 class="text-xl">Ljuskice (veneers)</h2>
+          <p>Tanki keramički nadomjesci za prednju površinu zuba. Estetski ispravljaju oblik, boju i položaj zuba.</p>
+        </section>
+      </div>
+    </article>
+
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/f05eb3fb-8e8b-4738-9e3e-4720ba2ca2e3.jpeg)] bg-cover bg-center ">
+
+          <p class="text-xl text-shadow-lg/50 py-30">Totalna proteza</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex rotate-y-180 flex-col  bg-base-100 px-2 py-5 md:py-10 text-black backface-hidden">
+          <h2 class="text-xl">Totalna proteza</h2>
+          <p>Mobilni nadomjestak za potpunu bezubost. Omogućuje žvakanje i vraća osmijeh osobama bez zuba.</p>
+        </section>
+      </div>
+    </article>
+
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/24ac444f-2ac6-49e2-9709-3ccf0ef70364.jpeg)] bg-cover bg-center ">
+
+          <p class="text-xl text-shadow-lg/50 py-30">Djelomična proteza</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex rotate-y-180 flex-col  bg-base-100 px-2 py-5 md:py-10 text-black backface-hidden">
+          <h2 class="text-xl">Djelomična proteza</h2>
+          <p>Mobilni protetski rad za djelomičnu bezubost. Oslanja se na preostale zube i sluznicu.</p>
+        </section>
+      </div>
+    </article>
+
+    <article class="group h-50 max-w-100 bg-transparent perspective-midrange">
+      <div
+        class="relative h-full w-full text-center transition-transform duration-500 transform-3d group-hover:rotate-y-180">
+        <section
+          class="absolute rounded-lg inset-x-0 bottom-0 flex h-full w-full flex-col  gap-y-5 bg-blue-50 px-2 py-2 md:py-10 text-white backface-hidden bg-[url(slikeZuba/implant1.jpeg)] bg-cover bg-center ">
+
+          <p class="text-xl text-shadow-lg/50 py-30">Protetika na implantatima</p>
+        </section>
+        <section
+          class="absolute rounded-lg border-2 flex h-50 w-flex  rotate-y-180 flex-col  bg-base-100 px-2 py-2 md:py-10 text-black backface-hidden">
+          <h2 class="text-xl">Protetika na implantatima</h2>
+          <p>Krunice, mostovi ili proteze učvršćene na implantatima. Vrhunska funkcija i estetika za trajno rješenje
+            bezubosti.</p>
+        </section>
+      </div>
+    </article>
+  </div>
+  <!-- Kontainer kartica -->
+  <div class="grid-cols-2 mt-20">
+    <!-- O nama i dental lab -->
+
+    <div class="hero bg-transparent min-h-1/2  justify-center lg:justify-start">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img src="Sanja.jpg" class=" rounded-lg shadow-2xl hidden lg:block max-h-90 max-w-90" />
+
+        <div class="bg-gray-100/90 max-w-sm md:max-w-2xl p-9 md:min-h-1/2 rounded-lg border-5 ">
+          <h1 class="text-5xl opacity-100   font-bold py-6 ml-3 text-center md:text-left">O nama</h1>
+          <p class="py-6 ml-5 text-xl  opacity-100">
+
+            Sanja Dentalni Laboratorij pruža precizna i kvalitetna dentalna rješenja uz suvremenu tehnologiju i
+            stručnost.
+            Posvećeni smo izradi vrhunskih protetskih radova koji osiguravaju funkcionalnost i prirodan izgled — saznaj
+            više.
+          </p>
+          <a href="Onama.html"
+            class="btn btn-info lg:text-xl !font-bold md:w-30 lg:w-40  font-semibold hover:text-blue-600 transition">Vidi
+            više...</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-cols-2">
+
+    <div class="hero bg-transparent min-h-1/2 justify-center lg:justify-end">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img src="usluge placeholder.jpg" class="max-h-90 max-w-90 rounded-lg shadow-2xl hidden lg:block" />
+
+        <div class="bg-gray-100/90 max-w-sm md:max-w-2xl p-9  md:min-h-1/2 rounded-lg border-5 ">
+          <h1 class="text-5xl opacity-100   font-bold py-6 ml-3 text-center md:text-left">Usluge i cjenik</h1>
+          <p class="py-6 ml-5 text-xl  opacity-100">
+
+            Saznaj nešto više o uslugama i cijenama Sanja Dental laboratorija. Otkrij širok spektar kvalitetnih
+            dentalnih rješenja izrađenih uz vrhunsku preciznost i modernu tehnologiju.
+          </p>
+          <a href="usluge.html"
+            class="btn btn-info lg:text-xl !font-bold md:w-30 lg:w-40  font-semibold hover:text-blue-600 transition">Vidi
+            više...</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="grid-cols-2 mb-20">
+    <!-- Kontakt kartica -->
+
+    <div class="hero bg-transparent min-h-1/2  justify-center lg:justify-start">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <figure class="max-w-2xs md:max-w-sm rounded-lg shadow-2xl hidden lg:block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.731029283504!2d16.40106054124291!3d43.54964835830851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355dd0a071b671%3A0x979509e2b0bbca48!2sPrivatna%20praksa%20dentalnog%20laboratorija%20Sanja%20Pocrnja!5e0!3m2!1shr!2shr!4v1747584146179!5m2!1shr!2shr" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </figure>
+        
+
+        <div class="bg-gray-100/90 max-w-sm md:max-w-2xl p-9 md:min-h-1/2 rounded-lg border-5 ">
+          <h1 class="text-5xl opacity-100   font-bold py-6 ml-3 text-center md:text-left">Kontakt</h1>
+          <p class="py-6 ml-5 text-xl  opacity-100">
+
+            Kontaktirajte Sanja Dental laboratorij za sve informacije o uslugama i suradnji. Ovdje možete pronaći i našu
+            lokaciju kako biste nas lakše posjetili ili dogovorili termin.
+          </p>
+          <a href="kontakt.html"
+            class="btn btn-info lg:text-xl !font-bold md:w-30 lg:w-40  font-semibold hover:text-blue-600 transition">Vidi
+            više...</a>
+        </div>
+
+      </div>
     </div>
   </div>
 
@@ -168,124 +363,10 @@ centralni navbar -->
       <img src="slikeZuba/f890b49e-a992-460c-b472-1b8e7dd714f7.jpeg" class="w-full" />
     </div>
   </div>
-  <!--usluge -->
-
-  <div class="card bg-base-300 shadow-sm mx-auto rounded-bg grid mt-40 w-96 lg:w-200  justify-items-center">
-    <a href="usluge.html">
-      <img src="usluge placeholder.jpg" alt="O nama" />
-    </a>
-    <div class="card-body flex justify-end bg-white w-96 lg:w-200">
-      <h1 class="card-title">Usluge i cjenik</h1>
-      <p>Saznaj nešto više o uslugama i cijenama Sanja Dental laboratorija.</p>
-      <div class="card-actions justify-end ">
-        <a href="usluge.html" class="btn btn-info !font-bold">Vidi još</a>
-      </div>
-    </div>
-  </div>
+  
 
 
-  <!-- Kartice za pregled -->
-  <div class="mx-auto mt-20 rounded-bg grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-8 bg-transparent ">
-    <!-- Metal-keramička krunica -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm">
-      <figure>
-        <img src="slikeZuba/e28cc70f-e707-419a-a50a-4ce5ff0d26a0.jpeg" alt="Metal-keramička krunica"
-          class="h-48 object-cover w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Metal-keramička krunica</h2>
-        <p>Kombinira metalnu bazu i keramiku za čvrstoću i prirodan izgled. Standard u dentalnoj protetici, posebno za
-          stražnje zube.</p>
-      </div>
-    </div>
 
-    <!-- Cirkonska krunica -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm">
-      <figure>
-        <img src="slikeZuba/a5ef9918-8c73-4006-9b2c-4b04afad5441.jpeg" alt="Cirkonska krunica"
-          class="h-48 object-cover w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Cirkonska krunica</h2>
-        <p>Visokoestetska, izuzetno čvrsta i biokompatibilna krunica, idealna za prednje i stražnje zube. Ne sadrži
-          metal.</p>
-      </div>
-    </div>
-
-    <!-- Potpuna keramička krunica -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm">
-      <figure>
-        <img src="slikeZuba/26c3df44-17e2-498a-84c4-ef1ac9275f38.jpeg" alt="Potpuna keramička krunica"
-          class="h-48 object-cover  w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Potpuna keramička krunica</h2>
-        <p>Najbolja estetika – potpuno bez metala, prozirnost i boja kao prirodan zub. Preporučuje se za prednje zube.
-        </p>
-      </div>
-    </div>
-
-    <!-- Zubni most -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm">
-      <figure>
-        <img src="slikeZuba/1a20cfec-969a-49c9-b9c5-b6cf61a36836.jpeg" alt="Zubni most"
-          class="h-48 object-cover w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Zubni most</h2>
-        <p>Fiksni nadomjestak koji povezuje praznine između zuba. Vraća funkciju i estetiku kod gubitka jednog ili više
-          zuba.</p>
-      </div>
-    </div>
-
-    <!-- Ljuskice (veneers) -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm">
-      <figure>
-        <img src="slikeZuba/ljuskice.JPG" alt="Ljuskice" class="h-48 object-cover w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Ljuskice (veneers)</h2>
-        <p>Tanki keramički nadomjesci za prednju površinu zuba. Estetski ispravljaju oblik, boju i položaj zuba.</p>
-      </div>
-    </div>
-
-    <!-- Totalna proteza -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm">
-      <figure>
-        <img src="slikeZuba/f05eb3fb-8e8b-4738-9e3e-4720ba2ca2e3.jpeg" alt="Totalna proteza"
-          class="h-48 object-cover w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Totalna proteza</h2>
-        <p>Mobilni nadomjestak za potpunu bezubost. Omogućuje žvakanje i vraća osmijeh osobama bez zuba.</p>
-      </div>
-    </div>
-
-    <!-- Djelomična proteza -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm mb-10">
-      <figure>
-        <img src="slikeZuba/24ac444f-2ac6-49e2-9709-3ccf0ef70364.jpeg" alt="Djelomična proteza"
-          class="h-48 object-cover w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Djelomična proteza</h2>
-        <p>Mobilni protetski rad za djelomičnu bezubost. Oslanja se na preostale zube i sluznicu.</p>
-      </div>
-    </div>
-
-    <!-- Protetika na implantatima -->
-    <div class="card bg-base-100 w-full max-w-md shadow-sm mb-10">
-      <figure>
-        <img src="slikeZuba/implant1.jpeg" alt="Protetika na implantatima" class="h-48 object-cover w-full" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-2xl font-bold">Protetika na implantatima</h2>
-        <p>Krunice, mostovi ili proteze učvršćene na implantatima. Vrhunska funkcija i estetika za trajno rješenje
-          bezubosti.</p>
-      </div>
-    </div>
-
-  </div>
 
 
 

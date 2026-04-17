@@ -14,18 +14,18 @@ let lastScrollY = window.scrollY;
     lastScrollY = window.scrollY;
   });
 
-const carousel = document.getElementById('carousel');
-  const items = carousel.querySelectorAll('.carousel-item');
-  let index = 0;
+// const carousel = document.getElementById('carousel');
+//   const items = carousel.querySelectorAll('.carousel-item');
+//   let index = 0;
 
-  function showSlide(i) {
-    const slideWidth = items[i].offsetWidth;
-    carousel.scrollTo({
-      left: slideWidth * i,
-      behavior: 'smooth'
-    });
-    index = i;
-  }
+//   function showSlide(i) {
+//     const slideWidth = items[i].offsetWidth;
+//     carousel.scrollTo({
+//       left: slideWidth * i,
+//       behavior: 'smooth'
+//     });
+//     index = i;
+//   }
 
   function goToSlide(i) {
     clearInterval(autoScroll);

@@ -90,13 +90,14 @@ centralni navbar -->
     <div class="navbar-center flex sm:justify-center bg-transparent font-bold">
       <div
         class=" flex items-center gap-2 max-w-2xl mr-6 px-2 py-1 font-bold  rounded-lg  sm:max-w-xl sm:px-2 sm:py-1 lg:max-w-4xl lg:px-4 lg:py-2 lg:rounded-xl lg:gap-4">
-        <a class="text-xl  md:text-2xl font-[1000] lg:mr-2 ml-4 md:ml-0" href="index.html">
-          Sanja Pocrnja <br class="sm:hidden">
-          dentalni laboratorij
+        <a href="index.html">
+        <img src="NavSLIK1.png" alt="" class="hidden sm:block">
+        <img src="NavMob.png" alt="" class="sm:hidden w-2/3"  >
         </a>
         <img src="Sanja dental logo finale.png" alt="Sanja dental lab logo"
-          class="w-12 h-12 lg:w-20 lg:h-20 rounded-full" />
+          class="w-12 h-12 lg:w-20 lg:h-20 rounded-full hidden sm:block" />
       </div>
+      
     </div>
     <!-- kraj navbara -->
     <div class="navbar-end">
@@ -106,7 +107,27 @@ centralni navbar -->
   </div>
 
 
-  <!-- Naslovnica -->
+      <!-- Naslovnica -->
+  <div class="mask-b-from-70% mask-b-to-90% md:mask-b-from-90% md:mask-b-to-100% lg:mask-b-from-70% lg:mask-b-to-90% lg:hidden">
+    <div class="hero min-h-screen bg-gray-700/50 bg-base-transparent">
+      <div class="hero-content text-center">
+        <div class=" ">
+          <img src="SanjaHero2.png" alt="">
+          <p class="py-6 text-xl sm:text-3xl text-gray-100">
+            Preciznost koja vraća osmijeh.
+          </p>
+          <!-- <a href="kontakt.html" class="btn btn-info !font-bold">Kontakt</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full mx-auto overflow-hidden rounded-2xl hidden lg:block">
+  <!-- Slides -->
+  <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+    
+    <div class="min-w-full">
+      <!-- Naslovnica -->
   <div class="mask-b-from-70% mask-b-to-90% md:mask-b-from-90% md:mask-b-to-100% lg:mask-b-from-70% lg:mask-b-to-90%">
     <div class="hero min-h-screen bg-gray-700/50 bg-base-transparent">
       <div class="hero-content text-center">
@@ -120,6 +141,72 @@ centralni navbar -->
       </div>
     </div>
   </div>
+    </div>
+
+  <div class="min-w-full relative justify-items-center">
+      <img src="karouselSl2.png" class="w-full  py-20  object-cover h-5/6 " />
+      
+    </div>
+
+
+      <!-- <img src="slikeZuba/24ac444f-2ac6-49e2-9709-3ccf0ef70364.jpeg" class="w-full mt-10 max-h-3/4 object-cover " /> -->
+    
+
+    <!-- <div class="min-w-full relative">
+      
+      <img src="slikeZuba/6763ccc6-4fa8-4395-91f1-0d7f79ab31f5.jpeg" class="w-60 sm:mt-10 mx-auto sm:max-h-1/4  pb-10" />
+     
+      </div>
+      
+    
+
+    <div class="min-w-full relative">
+      <img src="slikeZuba/ae6fd8b1-39fd-45ae-bbe4-494dbeb0a59b.jpeg" class="w-full max-w-xl h-96 object-cover pb-10" />
+  
+    </div>
+
+    <div class="min-w-full relative">
+<img src="slikeZuba/f890b49e-a992-460c-b472-1b8e7dd714f7.jpeg" class="w-full max-w-xl h-96 object-cover pb-10" />  
+  
+    </div>
+ -->
+  </div>
+
+  <!-- Buttons -->
+  <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-lg hidden">
+    ◀
+  </button>
+
+  <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-lg hidden">
+    ▶
+  </button>
+</div>
+
+<script>
+  let index = 0;
+  const carousel = document.getElementById("carousel");
+  const totalSlides = carousel.children.length;
+
+  function updateSlide() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+  }
+
+  // Auto play (optional)
+  setInterval(nextSlide, 6000);
+</script>
+
+
+
 
   <!-- Kartica -->
   <div class="mx-20 mt-20 justify-between  end-safe grid  grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-4 gap-8 ">
@@ -347,22 +434,6 @@ centralni navbar -->
   </div> -->
 
 
-  <!-- karousel -->
-  <div id="carousel"
-    class="carousel max-w-sm h-96 lg:h-200 mx-auto my-auto lg:max-w-4xl w-200 mx-auto mt-10 rounded-box shadow overflow-x-auto scroll-smooth whitespace-nowrap">
-    <div class="carousel-item w-full inline-block">
-      <img src="slikeZuba/8d551035-da7f-4324-9355-513d5d2149d3.jpeg" class="w-full" />
-    </div>
-    <div class="carousel-item w-full inline-block">
-      <img src="slikeZuba/e3b320a2-fbd3-48a6-b4e1-6a510c510b3e.jpeg" class="w-full" />
-    </div>
-    <div class="carousel-item w-full inline-block">
-      <img src="slikeZuba/ae6fd8b1-39fd-45ae-bbe4-494dbeb0a59b.jpeg" class="w-full" />
-    </div>
-    <div class="carousel-item w-full inline-block">
-      <img src="slikeZuba/f890b49e-a992-460c-b472-1b8e7dd714f7.jpeg" class="w-full" />
-    </div>
-  </div>
   
 
 
